@@ -100,7 +100,7 @@ def leftRotate(node):
     node.left.right = node.left.left
     node.left.left = buffer
     updateHeight(node.left)
-    updateHeight(node.right)
+    updateHeight(node)
 
 
 def balance(node):
@@ -125,4 +125,4 @@ insert(node, 9, 'John')
 #delete(node, 3)
 
 
-pprint.pprint(vars(node.right.right.left.right))
+pprint.pprint(vars(node.right.left.right))
